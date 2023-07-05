@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Booking Registration Form</title>
+</head>
+<body>
+  <h1>Hotel Booking Registration Form</h1>
+  <form>
+    <h2>Customer Info</h2>
+    <label for="customerName">Customer Name:</label>
+    <input type="text" id="customerName" required><br>
+
+    <label for="checkInDate">Check-in Date:</label>
+    <input type="date" id="checkInDate" required><br>
+
+    <label for="totalDays">Total No of Days:</label>
+    <input type="number" id="totalDays" required><br>
+
+    <label for="totalPersons">Total No of Persons:</label>
+    <input type="number" id="totalPersons" required><br>
+
+    <h2>Room Information</h2>
+    <label for="roomType">Room Type:</label>
+    <select id="roomType">
+      <option value="delux">Delux Room</option>
+      <option value="suite">Suite Room</option>
+    </select><br>
+
+    <label for="amenities">Amenities:</label>
+    <select id="amenities">
+      <option value="ac">AC</option>
+      <option value="locker">Locker</option>
+    </select><br>
+
+    <h2>Advance Payment</h2>
+    <label for="advanceAmount">Advance Amount:</label>
+    <input type="number" id="advanceAmount" required><br>
+
+    <h2>Balance Amount</h2>
+    <label for="balance">Balance:</label>
+    <input type="number" id="balance" readonly><br>
+
+    <h2>Total Cost Calculation</h2>
+    <label for="totalRoomCost">Total Room Cost:</label>
+    <input type="number" id="totalRoomCost" readonly><br>
+
+    <label for="totalAmenitiesCost">Total Amenities Cost:</label>
+    <input type="number" id="totalAmenitiesCost" readonly><br>
+
+    <label for="totalCost">Total Cost:</label>
+    <input type="number" id="totalCost" readonly><br>
+
+    <h2>Additional Charges</h2>
+    <p>Upto 2 People: No Change in Cost</p>
+    <p>Per Day Cost for Extra Person: 1000/-</p>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
